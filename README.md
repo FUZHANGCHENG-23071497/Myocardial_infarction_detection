@@ -20,23 +20,23 @@ Kaggle Dataset: https://www.kaggle.com/datasets/aysendegerli/hmcqu-dataset
 ## 🧪 Methodology
 1. **Data Acquisition & Preprocessing**  
    - Convert `.avi` echocardiography videos to `.npy` format using  
-     [save_avi_to_npy.ipynb](https://github.com/your-username/Early-MI-Detection/blob/main/save_avi_to_npy.ipynb).  
+     save_avi_to_npy.ipynb
    - Metadata and labels are provided in:  
-     - [A2C.csv](https://github.com/your-username/Early-MI-Detection/blob/main/A2C.csv)  
-     - [A4C.csv](https://github.com/your-username/Early-MI-Detection/blob/main/A4C.csv)  
+     - [A2C Dataset (CSV)](A2C.csv)  
+     - [A4C Dataset (CSV)](A4C.csv) 
    - Videos can be visualized with  
-     [display_npy_video.ipynb](https://github.com/your-username/Early-MI-Detection/blob/main/display_npy_video.ipynb).  
+     display_npy_video.ipynb
 
 2. **Model Architectures**  
    - **CNN+LSTM:**  
-     - Implemented in [hmc_qu_cnn+lstm_model_training.ipynb](https://github.com/your-username/Early-MI-Detection/blob/main/notebook/hmc_qu_cnn%2Blstm_model_training.ipynb).  
+     - Implemented in [hmc_qu_cnn+lstm_model_training.ipynb](notebook/hmc_qu_cnn%2Blstm_model_training.ipynb).  
      - CNN extracts spatial features; LSTM models temporal dependencies.  
    - **3D CNN:**  
-     - Implemented in [hmc_qu_3d_cnn_model_training.ipynb](https://github.com/your-username/Early-MI-Detection/blob/main/notebook/hmc_qu_3d_cnn_model_training.ipynb).  
+     - Implemented in [hmc_qu_3d_cnn_model_training.ipynb](notebook/hmc_qu_3d_cnn_model_training.ipynb).  
      - Learns spatio-temporal features directly from video volumes.  
 
 3. **Training & Evaluation**  
-   - General training workflows available in [hmc_qu_model_training.ipynb](https://github.com/your-username/Early-MI-Detection/blob/main/hmc_qu_model_training.ipynb).  
+   - General training workflows available in hmc_qu_model_training.ipynb.
    - Metrics: Accuracy, Precision, Recall, F1-score.  
    - Comparison between A2C and A4C view performance.  
 
