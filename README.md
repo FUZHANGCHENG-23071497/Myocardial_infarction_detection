@@ -20,12 +20,12 @@ Kaggle Dataset: https://www.kaggle.com/datasets/aysendegerli/hmcqu-dataset
 ## 🧪 Methodology
 1. **Data Acquisition & Preprocessing**  
    - Convert `.avi` echocardiography videos to `.npy` format using  
-     save_avi_to_npy.ipynb
+     [save_avi_to_npy.ipynb](save_avi_to_npy.ipynb)
    - Metadata and labels are provided in:  
      - [A2C Dataset (CSV)](A2C.csv)  
      - [A4C Dataset (CSV)](A4C.csv) 
    - Videos can be visualized with  
-     display_npy_video.ipynb
+     [display_npy_video.ipynb](display_npy_video.ipynb)
 
 2. **Model Architectures**  
    - **CNN+LSTM:**  
@@ -36,7 +36,7 @@ Kaggle Dataset: https://www.kaggle.com/datasets/aysendegerli/hmcqu-dataset
      - Learns spatio-temporal features directly from video volumes.  
 
 3. **Training & Evaluation**  
-   - General training workflows available in hmc_qu_model_training.ipynb.
+   - General training workflows available in [hmc_qu_model_training.ipynb](hmc_qu_model_training.ipynb).
    - Metrics: Accuracy, Precision, Recall, F1-score.  
    - Comparison between A2C and A4C view performance.  
 
